@@ -1,0 +1,111 @@
+// Menu page
+.details-menu{
+    display: block;
+    padding: 20px 0;
+}
+.coffee-title{
+      text-align: center;
+      font: oblique;
+      p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.coffee-list{
+    padding: 35px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    h4{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px dashed #ccc;
+        padding-bottom: 10px;
+    }
+    span{
+        color: #c19942;
+    }
+    p{
+        margin-top: 15px;
+        color: #c19942;
+    }
+}
+.cocktails-title{
+    text-align: center;
+    font: oblique;
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.cocktails-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
+}
+.tea-title{
+    text-align: center;
+    font: oblique;
+    img{
+        width: 50%;
+    }
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.tea-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
+}
+.cake-title{
+    img{
+        width: 50%;
+    }
+    text-align: center;
+    font: oblique;
+    p{
+        font-size: 20px;
+        color:#e5a418
+      }
+}
+.cake-list{
+  padding: 35px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  h4{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+  }
+  span{
+      color: #c19942;
+  }
+  p{
+      margin-top: 15px;
+      color: #c19942;
+  }
+}

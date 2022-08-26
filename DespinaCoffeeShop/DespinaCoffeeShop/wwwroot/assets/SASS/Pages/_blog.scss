@@ -1,0 +1,36 @@
+//Blog page
+.inner-blogs{
+    padding: 30px 0;
+}
+.inner-blog-img{
+    img{
+        margin: 8px 0;
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px 0;
+        box-shadow: wheat;
+    }
+}
+.inner-blog-description{
+    margin: 8px 0;
+    border-radius: 25px;
+    border: 2px solid #c19942;
+    a{
+        padding: 10px 0;
+        color: #e5a418;
+        font-size: 25px;
+        &:hover{
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+}
+.post-blog{
+    padding: 10px 0;
+}
+.post-blog-bg{
+    img{
+        width: 100%;
+        border-radius: 12px;
+    }
+}

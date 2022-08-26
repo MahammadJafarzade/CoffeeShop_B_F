@@ -1,0 +1,237 @@
+﻿@model MenuVM
+@{
+    ViewData["Title"] = "MenuDetail";
+}
+<main>
+    <section id="details-menu">
+        <div class="details-menu">
+            <div class="container menu-coffee" id="coffee">
+                <div class="coffee-title" data-aos="fade-up">
+                    <img src="~/./assets/Img/item9.png">
+                    <h1>Coffee</h1>
+                    <p>Good Friends. Good Coffee. Good Times</p>
+                </div>
+                <div class="coffee-description row" data-aos="fade-up">
+                    @foreach (var item in Model.menuProducts)
+                    {
+                        <div class="coffee-list col-md-4">
+                            <h4>
+                                @item.ProductName
+                                <span>$@item.ProductPrice</span>
+                            </h4>
+                            <p>@item.ProductDescription</p>
+                        </div>
+                    }
+
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Iced Americano
+                            <span>$7.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Iced Cappuccino
+                            <span>$8.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Coffee Socola
+                            <span>$13.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Caffé Mocha
+                            <span>$12.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Americano
+                            <span>$4.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            White Chocolate Mocha
+                            <span>$15.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Cappuccino
+                            <span>$5.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="coffee-list col-md-4">
+                        <h4>
+                            Espresso
+                            <span>$6.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu-cocktails" id="cocktails">
+                <div class="cocktails-title" data-aos="fade-up">
+                    <img src="~/./assets/Img/item15.png">
+                    <h1>Cocktails</h1>
+                    <p>Making your parties complete</p>
+                </div>
+                <div class="cocktails-description row" data-aos="fade-up">
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Raspberry Chiller
+                            <span>$10.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Mango Dragonfruit
+                            <span>$12.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Paradise Drink
+                            <span>$17.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Dragon Drink
+                            <span>$15.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Pineapple Passionfruit Lemonade
+                            <span>$18.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                    <div class="cocktails-list col-md-6">
+                        <h4>
+                            Pink Drink
+                            <span>$13.00</span>
+                        </h4>
+                        <p>
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu-tea" id="tea" data-aos="fade-up">
+                <div class="tea-title">
+                    <img src="~/./assets/Img/concept-hot-drink-with-tea-isolated-white-background_185193-68947.webp">
+                    <h1>Tea</h1>
+                    <p>Be more with tea</p>
+                </div>
+                <div class="tea-description row" data-aos="fade-up">
+                    <div class="tea-list col-md-6">
+                        <h4>
+                            Black tea
+                            <span>$2.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="tea-list col-md-6">
+                        <h4>
+                            Green tea
+                            <span>$3.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="tea-list col-md-6">
+                        <h4>
+                            White Tea
+                            <span>$5.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="tea-list col-md-6">
+                        <h4>
+                            Yellow Tea
+                            <span>$7.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container menu-cake" id="cake" data-aos="fade-up">
+                <div class="cake-title">
+                    <img src="~/./assets/Img/cupcakes_74190-20.webp">
+                    <h1>Cakes</h1>
+                    <p>A little bliss in every bite</p>
+                </div>
+                <div class="cake-description row" data-aos="fade-up">
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            Strawberry Cheesecake
+                            <span>$14.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            New York-Style Cheesecake
+                            <span>$18.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            San-Sebastian Cheesecake
+                            <span>$25.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            Swedish Style Cheesecake
+                            <span>$22.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            Croissant
+                            <span>$5.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                    <div class="cake-list col-md-6">
+                        <h4>
+                            Cake
+                            <span>$6.00</span>
+                        </h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

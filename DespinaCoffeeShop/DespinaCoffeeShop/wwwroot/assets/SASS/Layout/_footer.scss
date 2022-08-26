@@ -1,0 +1,58 @@
+// Footer Start
+.footer{
+    background-image: url('/assets/Img/footer-bg.jpg');
+    background-attachment: fixed;
+    padding: 20px 0;
+    bottom: 0;
+}
+.d-flex{
+    display: flex;
+}
+.info-despina{
+    color: white;
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            i{
+                font-size: 15px;
+                color: #c7a17a;
+                margin: 0 5px;   
+                transition: 0.5s;
+                &:hover{
+                    color: white;
+                }      
+               }
+        }
+    }
+}
+.contact-despina{
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+    li{
+        list-style-type: none;
+        color: white;  
+      }
+}
+.openning-hour{
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+   li{
+      list-style-type: none;
+      color: white;  
+    }
+}
+.despina-video {
+    h4{
+        color: #c7a17a;
+        font-size: 25px;
+    }
+    img{
+        margin-top: 10px;
+    }
+}
+// End Footer

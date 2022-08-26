@@ -1,0 +1,29 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="inner-blogs">
+    <div class="container">
+        <div class="row" data-aos="fade-up">
+            @foreach (var item in Model.Blogs)
+            {
+
+            <div class="inner-blog-img col-lg-6">
+                <img  src="~/./assets/Img/@item.BlogImg">
+            </div>
+            <div class="inner-blog-description col-lg-6">
+                <h1>@item.Title</h1>
+                <p>@item.PubishedDate</p>
+                <p>
+                    If you ever hang out backstage at the World Brewers Cup Competition, you’re very likely to
+                    see baristas hunched over trays of coffee, obsessively picking over their beans. Any slight
+                    blemish or discoloration, any deviation in size or shape, and the offending bean is plucked
+                    out and discarded, until only the most perfect physical specimens are left to face the...
+                </p>
+                <p><a asp-action="detail" asp-controller="blog" asp-route-id="@item.Id">Read more<i class="fa-solid fa-arrow-right"></i></a></p>
+            </div>
+            }
+            
+        </div>
+    </div>
+</div>

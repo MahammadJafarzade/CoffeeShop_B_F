@@ -1,0 +1,26 @@
+﻿@using DespinaCoffeeShop.ViewModels.Account
+@model SignInVM
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+<div class="container">
+    <div class="inner-login row">
+        <div class="login-email col-md-5">
+            <label for="email">Email</label>
+            <input type="text" asp-for="Email" placeholder="Email">
+            <span class="text-danger" asp-validation-for="Email"></span>
+        </div>
+        <div class="login-password col-md-5">
+            <label for="password">Password</label>
+            <input type="text" asp-for="Password" placeholder="Password">
+            <span class="text-danger" asp-validation-for="Password"></span>
+        </div>
+        <div class="login-button">
+            <button>
+                <a href="index.html">Sign in</a>
+            </button>
+            <span>If you don't have account so click <a asp-action="Register">Register</a></span>
+        </div>
+    </div>
+</div>

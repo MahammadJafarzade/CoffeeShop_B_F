@@ -1,0 +1,90 @@
+.navigationbar{
+    display: flex;
+    justify-content: space-around;
+    img{
+        margin-top: 5px;
+    }
+}
+.details{
+    margin: 30px 0;
+  
+}
+.nav{
+    display: flex;
+    ul{
+        display: flex;
+        
+        li{
+            list-style-type: none;
+            font-size: 18px;
+            padding-left: 30px;
+              a{
+                    color: white;
+                    text-decoration: none;
+                }
+                
+        }
+    }
+}
+.bar{
+    ul{
+        display: flex;
+        margin: 30px 0;
+        a{
+            text-decoration: none;
+            li{
+                list-style-type: none;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 18px;
+                padding-left: 30px;
+                color: white;     
+            }
+        }
+    }
+}
+.nav-shop{
+    &:hover .drop-shop{
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+    .drop-shop::before{
+        border-color: transparent transparent #fff;
+        border-style:solid ;
+        border-width: 0 12px 10px;
+        bottom: 100%;
+        content: "";
+        height: 0;
+        left: 5%;
+        position: absolute;
+        width: 0;
+    }
+    .drop-shop{
+        background-color: white;
+        display: none;
+        position: absolute;
+        padding: 20px 15px ;
+        border-radius: 5px;
+        margin-top: 10px;
+        z-index: 25;
+        text-align: left;
+        a{
+            color: #372727;
+            border-bottom: 2px dashed #c7a17a;
+            margin:5px 0;
+            left: 5px;
+        
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .navigationbar{
+        justify-content: flex-end;
+    }
+    .nav{
+        display: none;
+    }
+    .bar{
+        justify-content: space-between;
+    }
+}

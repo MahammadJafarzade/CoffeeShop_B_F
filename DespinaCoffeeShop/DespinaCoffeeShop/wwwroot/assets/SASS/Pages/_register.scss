@@ -1,0 +1,48 @@
+//Register
+.inner-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    label{
+        display: block;
+        margin: 5px 0;
+    }
+    input{
+        padding: 12px 22px;
+        width: 100%;
+        background-color: #f8f8f8;
+        border: 1px solid #c7a17a;
+        border-radius: 12px;        
+    }
+}
+.register-password{
+    input{
+        margin: 5px 0;
+    }
+}
+.register-button{
+    a{
+        text-decoration: none;
+    }
+    button{
+        margin: 10px;
+        padding: 13px 20px;
+        background-color: black;
+        border-radius: 12px;
+        border: none;
+        transition: 0.8s;
+        a{
+            transition: 0.8s;
+            text-decoration: none;
+            color: wheat;     
+        }
+        &:hover{
+            opacity: 0.9;
+            a{
+                color: white;
+            }
+        }
+    }
+}
