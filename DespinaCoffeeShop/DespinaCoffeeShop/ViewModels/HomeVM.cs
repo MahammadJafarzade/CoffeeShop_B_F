@@ -17,11 +17,8 @@ namespace DespinaCoffeeShop.ViewModels
         public List<InnerMenu> MenuDetails { get; set; }
         public List<Menu> menuProducts { get; set; }
         public List<SocialMedia> SocialMedias { get; set; }
-        public List<ProductCategory> ProductCategories { get; set; }
+        public List<ProductCategory> ProductCategory { get; set; }
+        public List<Product> Products{ get; set; }
     }
 }
 
-
-
-}
-}

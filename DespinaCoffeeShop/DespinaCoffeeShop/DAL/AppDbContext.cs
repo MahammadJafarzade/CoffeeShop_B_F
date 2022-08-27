@@ -22,6 +22,8 @@ namespace DespinaCoffeeShop.DAL
         public DbSet<Slide> Slides { get; set; }
         public DbSet<SocialMedia> socialMedias { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
 
     }
 }

@@ -27,7 +27,8 @@ namespace DespinaCoffeeShop.Controllers
                 Blogs = _context.Blogs.ToList(),
                 Slides=_context.Slides.ToList(),
                 SocialMedias=_context.socialMedias.ToList(),
-                ProductCategories=_context.ProductCategories.Where(c => !c.IsDeleted).ToList(),
+                ProductCategory=_context.ProductCategories.Where(c => !c.IsDeleted).ToList(),
+                Products=_context.Products.ToList()
             };
             return View(home);
         }

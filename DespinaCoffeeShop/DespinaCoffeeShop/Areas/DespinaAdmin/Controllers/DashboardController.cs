@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DespinaCoffeeShop.Areas.CoffeeShopDespina.Controllers
+namespace DespinaCoffeeShop.Areas.DespinaAdmin.Controllers
 {
-    public class SliderController : Controller
+    [Area("DespinaAdmin")]
+    public class DashboardController : Controller
     {
         public IActionResult Index()
         {

@@ -1,16 +1,18 @@
-﻿
+﻿@model ProductVM
 @{
     ViewData["Title"] = "Index";
 }
 <div class="container">
     <div class="product-details">
+        @foreach (var item in Model.Products)
+        {
         <div class="product">
-            <img src="./assets/Img/4237922e6a7c11fb5b7d98858569130b.png" alt="">
+            <img src="~/./assets/Img/@item.Images">
         </div>
         <div class="prod-details">
-            <h2>TITLE</h2>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-            <p>$52.00</p>
+            <h2>@item.Title</h2>
+            <h4>@item.Description</h4>
+            <p>$@item.Price.ToString("0.00")</p>
             <div class="counter">
                 <span class="down" onClick='decreaseCount(event, this)'>-</span>
                 <input type="text" value="1">
@@ -18,5 +20,6 @@
             </div>
             <button class="pr-button">Add To Cart</button>
         </div>
+        }
     </div>
 </div>

@@ -25,8 +25,7 @@ namespace DespinaCoffeeShop.Controllers
             };
             return View(blogs);
         }
-
-
+        
         public IActionResult Detail(int id)
         {
             var blog = _context.Blogs.FirstOrDefault(x => x.Id == id);

@@ -1,0 +1,49 @@
+﻿@model ShopVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row inner-shop">
+        <div class="inner-categories col-lg-3">
+            <h2>Categories</h2>
+            <ul>
+                @foreach (var item in Model.ProductCategory)
+                {
+                    <li><a asp-route="@item.Id">@item.Name</a></li>
+                }
+            </ul>
+            <div class="price-range">
+                <h3>Price Range</h3>
+                <div class="range-slider">
+                    <span class="range-values"></span>
+                    <input type="range" value="0" min="0" max="1000" step="1">
+                    <input type="range" value="1000" min="0" max="1000" step="1">
+                </div>
+            </div>
+            <button class="filter-price">Filter</button>
+        </div>
+        <div class="shop-products col-lg-9 row">
+            @foreach (var item in Model.Products)
+            {
+                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                    <a href="#"><img src="~/./assets/Img/@item.Images"></a>
+                    <h5>@item.Title</h5>
+                    <h5>$@item.Price<h5>
+                    <div class="button-overlay">
+                         <a href="#">
+                           <button class="add-button">View Fullpage</button>
+                         </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="paginations">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+</div>
