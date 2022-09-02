@@ -26,9 +26,9 @@ namespace DespinaCoffeeShop.Controllers
         }
         public IActionResult Detail(int id)
         {
-            var shop = _context.Shops.FirstOrDefault(x => x.Id == id);
+            var shops = _context.Shops.FirstOrDefault(x => x.Id == id);
 
-            return View(shop);
+            return View(shops);
         }
     }
 }

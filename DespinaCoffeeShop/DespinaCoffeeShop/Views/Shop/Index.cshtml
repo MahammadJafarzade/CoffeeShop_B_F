@@ -27,11 +27,11 @@
             @foreach (var item in Model.Products)
             {
                 <div class="shop-product col-md-3 col-sm-4 col-xs-12">
-                    <a href="#"><img src="~/./assets/Img/@item.Images"></a>
+                    <a href="@item.Id"><img src="~/./assets/Img/@item.Images"></a>
                     <h5>@item.Title</h5>
                     <h5>$@item.Price<h5>
                     <div class="button-overlay">
-                         <a href="#">
+                         <a href="@item.Id">
                            <button class="add-button">View Fullpage</button>
                          </a>
                     </div>
