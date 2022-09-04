@@ -316,3 +316,5 @@ C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\bin\Debug\netco
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\ProductCategory\Update.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Index.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Create.cshtml.g.cs
