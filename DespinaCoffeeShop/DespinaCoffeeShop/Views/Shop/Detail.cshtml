@@ -1,0 +1,26 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+    <div class="product-details">
+        <div class="product">
+            @foreach (var img in Model.Images)
+            {
+                <img src="~/assets/Img/@img.Url" />
+            }
+        </div>
+            <div class="prod-details">
+                <h2>@Model.Title</h2>
+                <h4>@Model.Description</h4>
+                <p>$@Model.Price.ToString("0.00")</p>
+                <div class="counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+                <button class="pr-button">Add To Cart</button>
+            </div>
+    </div>
+</div>

@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20220826133420_CreateUsersTable.Designer.cs" />
     <Compile Remove="Migrations\20220826133708_CreateUsersTables.cs" />
     <Compile Remove="Migrations\20220826133708_CreateUsersTables.Designer.cs" />
+    <Compile Remove="Migrations\20220911202625_TitleAdded.cs" />
+    <Compile Remove="Migrations\20220911202625_TitleAdded.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

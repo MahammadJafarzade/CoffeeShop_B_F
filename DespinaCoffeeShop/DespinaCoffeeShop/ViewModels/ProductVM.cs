@@ -8,7 +8,7 @@ namespace DespinaCoffeeShop.ViewModels
 {
     public class ProductVM
     {
-        public List<Product> Products { get; set; }
-
+        public  List<Product> products { get; set; }
+        public  string categoryName { get; set; } 
     }
 }

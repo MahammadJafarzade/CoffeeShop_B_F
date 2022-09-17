@@ -303,7 +303,6 @@ C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netco
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationPartial.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Account\SignIn.cshtml.g.cs
-C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\_ViewStart.cshtml.g.cs
@@ -318,3 +317,6 @@ C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\bin\Debug\netco
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\ProductCategory\Update.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Index.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Create.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Update.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Detail.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\FilterforCategory.cshtml.g.cs

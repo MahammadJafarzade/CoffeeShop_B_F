@@ -11,5 +11,7 @@ namespace DespinaCoffeeShop.Models
         public string Url { get; set; }
         public string Image { get; set; }
         public bool IsDeleted { get; set; }
+        public string Title { get; set; }
+        
     }
 }

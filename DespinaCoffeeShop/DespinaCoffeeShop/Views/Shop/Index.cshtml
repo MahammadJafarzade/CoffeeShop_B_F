@@ -10,7 +10,9 @@
             <ul>
                 @foreach (var item in Model.ProductCategory)
                 {
-                    <li><a asp-route="@item.Id">@item.Name</a></li>
+                   
+                 <li><a asp-controller="Shop" asp-action="FilterforCategory" asp-route-name="@item.Name">@item.Name</a></li>
+                    
                 }
             </ul>
             <div class="price-range">
@@ -26,16 +28,20 @@
         <div class="shop-products col-lg-9 row">
             @foreach (var item in Model.Products)
             {
-                <div class="shop-product col-md-3 col-sm-4 col-xs-12">
-                    <a href="@item.Id"><img src="~/./assets/Img/@item.Images"></a>
-                    <h5>@item.Title</h5>
-                    <h5>$@item.Price<h5>
-                    <div class="button-overlay">
-                         <a href="@item.Id">
-                           <button class="add-button">View Fullpage</button>
-                         </a>
-                    </div>
-                </div>
+            <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+                @foreach (var img in @item.Images)
+                {
+                    <img src="~/assets/Img/@img.Url" />
+                }                    
+                <h5>@item.Title</h5>
+                <h5>
+                    $@item.Price<h5>
+                        <div class="button-overlay">
+                            <a asp-action="detail" asp-controller="Shop" asp-route-id="@item.Id">
+                                <button class="add-button">View Fullpage</button>
+                            </a>
+                        </div>
+            </div>
             }
         </div>
     </div>

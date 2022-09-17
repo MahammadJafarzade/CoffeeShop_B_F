@@ -1,6 +1,7 @@
 ﻿using DespinaCoffeeShop.Models;
 using DespinaCoffeeShop.ViewModels;
 using DespinaCoffeeShop.ViewModels.Account;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -50,6 +51,7 @@ namespace DespinaCoffeeShop.Controllers
             await _signInManager.SignInAsync(newUser, true);
             return RedirectToAction("Index", "Home");
         }
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
