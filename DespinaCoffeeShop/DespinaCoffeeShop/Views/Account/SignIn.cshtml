@@ -4,23 +4,26 @@
     ViewData["Title"] = "SignIn";
 }
 
-<div class="container">
-    <div class="inner-login row">
-        <div class="login-email col-md-5">
-            <label for="email">Email</label>
-            <input type="text" asp-for="Email" placeholder="Email">
-            <span class="text-danger" asp-validation-for="Email"></span>
-        </div>
-        <div class="login-password col-md-5">
-            <label for="password">Password</label>
-            <input type="password" asp-for="Password" placeholder="Password">
-            <span class="text-danger" asp-validation-for="Password"></span>
-        </div>
-        <div class="login-button">
-            <button type="submit">
-            Sign in
-            </button>
-            <span>If you don't have account so click <a asp-action="Register">Register</a></span>
+<form method="post" asp-action="SignIn" asp-controller="Account">
+    <div class="container">
+        <div class="inner-login row">
+
+            <div class="login-email col-md-5">
+                <label asp-for="Email">Email</label>
+                <input type="text" asp-for="Email" placeholder="Email">
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="login-password col-md-5">
+                <label asp-for="Password">Password</label>
+                <input type="password" asp-for="Password" placeholder="Password">
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="login-button">
+                <button type="submit" >
+                    Sign in
+                </button>
+                <span>If you don't have account so click <a asp-action="Register">Register</a></span>
+            </div>
         </div>
     </div>
-</div>
+</form>

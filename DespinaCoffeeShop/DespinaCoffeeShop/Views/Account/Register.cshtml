@@ -1,35 +1,38 @@
-﻿@using DespinaCoffeeShop.ViewModels.Account
+﻿
 @model RegisterVM
 @{
     ViewData["Title"] = "Register";
 }
-<div class="container">
-    <div class="inner-register">
-        <div class="register-firstname col-md-5">
-            <label for="name">Firstname</label>
-            <input type="text" placeholder="Firstname" required>
-            <span class="text-danger" asp-validation-for="FullName"></span>
-        </div>
-        <div class="register-lastname col-md-5">
-            <label for="lastname">Lastname</label>
-            <input type="text"asp-for="FullName" placeholder="Lastname" required>
-            <span class="text-danger" asp-validation-for="FullName"></span>
-        </div>
-        <div class="register-email col-md-5">
-            <label for="email">Email</label>
-            <input type="email" asp-for="Email" placeholder="Email" required>
-            <span class="text-danger" asp-validation-for="Email"></span>
-        </div>
-        <div class="register-password col-md-5">
-            <label for="password">Password</label>
-            <input type="password" asp-for="Password" placeholder="Password" required>
-            <span class="text-danger" asp-validation-for="Password"></span>
-            <input type="password" asp-for="CheckPassword" placeholder="Confirm Password" required>
-            <span class="text-danger" asp-validation-for="CheckPassword"></span>
-        </div>
-        <div class="register-button">
-            <button type="submit" asp-action="Register">Register</button>
+<form method="post" asp-controller="Account" asp-action="Register">
+    <div class="container">
+        <div class="inner-register">
+
+            <div class="register-firstname col-md-5">
+                <label for="name">Firstname</label>
+                <input type="text" asp-for="FullName" placeholder="Firstname" required>
+                <span class="text-danger" asp-validation-for="FullName"></span>
+            </div>
+            <div class="register-lastname col-md-5">
+                <label for="lastname">Lastname</label>
+                <input type="text" asp-for="Username" placeholder="Lastname" required>
+                <span class="text-danger" asp-validation-for="Username"></span>
+            </div>
+            <div class="register-email col-md-5">
+                <label for="email">Email</label>
+                <input type="email" asp-for="Email" placeholder="Email" required>
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="register-password col-md-5">
+                <label for="password">Password</label>
+                <input type="password" asp-for="Password" placeholder="Password" required>
+                <span class="text-danger" asp-validation-for="Password"></span>
+                <input type="password" asp-for="CheckPassword" placeholder="Confirm Password" required>
+                <span class="text-danger" asp-validation-for="CheckPassword"></span>
+            </div>
+            <div class="register-button">
+                <button type="submit">Register</button>
+            </div>
         </div>
     </div>
-</div>
+</form>
 <partial name="_ValidationPartial" />

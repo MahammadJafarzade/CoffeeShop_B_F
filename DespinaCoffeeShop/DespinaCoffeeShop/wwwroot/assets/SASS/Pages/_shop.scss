@@ -112,20 +112,17 @@
 }
 .paginations{
     margin-top: -20px;
-    ul{
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    .page{
+        
         list-style-type: none;
-        li{
-            margin: 10px;  
-            background-color: black;
-            border-radius: 50%;
-            padding: 15px;
-            font-size: 15px;
-            a{
-                text-decoration: none;
-                color: wheat;
-            }
+        margin: 10px;  
+        background-color: black;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 15px;
+        text-decoration: none;
+        color: wheat;
         }
     }
-}

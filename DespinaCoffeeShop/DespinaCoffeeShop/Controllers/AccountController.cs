@@ -48,8 +48,7 @@ namespace DespinaCoffeeShop.Controllers
                 }
                 return View(user);
             }
-            await _signInManager.SignInAsync(newUser, true);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("SignIn", "Account");
         }
 
         public async Task<IActionResult> Logout()
@@ -66,10 +65,14 @@ namespace DespinaCoffeeShop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SignIn(SignInVM user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
             AppUser userDb=await _userManager.FindByEmailAsync(user.Email);
             if (userDb == null)
             {
-                ModelState.AddModelError("", "Email or password is wrong");
+                ModelState.AddModelError("","Email or password is wrong");
                 return View(user);
             }
             var signInResult = await _signInManager.PasswordSignInAsync(userDb.UserName, user.Password, user.IsPersistent, lockoutOnFailure: true);
@@ -83,13 +86,12 @@ namespace DespinaCoffeeShop.Controllers
                 ModelState.AddModelError("", "Email or password is wrong");
                 return View(user);
             }
-            if (!userDb.IsActivated)
-            {
-                ModelState.AddModelError("", "Please verify your account");
-                return View(user);
-            }
+            //if (!userDb.IsActivated)
+            //{
+            //    ModelState.AddModelError("", "Please verify your account");
+            //    return View(user);
+            //}
             return RedirectToAction("Index", "Home");
-
         }
     }
 }

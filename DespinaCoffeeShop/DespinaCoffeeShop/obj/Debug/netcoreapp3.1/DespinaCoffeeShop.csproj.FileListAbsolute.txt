@@ -280,8 +280,6 @@ C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netco
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\DespinaCoffeeShop.RazorAssemblyInfo.cache
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\DespinaCoffeeShop.RazorAssemblyInfo.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\staticwebassets\DespinaCoffeeShop.StaticWebAssets.Manifest.cache
-C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\staticwebassets\DespinaCoffeeShop.StaticWebAssets.xml
-C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\DespinaCoffeeShop.styles.css
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\DespinaCoffeeShop.TagHelpers.input.cache
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\DespinaCoffeeShop.TagHelpers.output.cache
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\DespinaCoffeeShop.RazorCoreGenerate.cache
@@ -320,3 +318,7 @@ C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netco
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Areas\DespinaAdmin\Views\Blogs\Update.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Detail.cshtml.g.cs
 C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\FilterforCategory.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ProductPartial.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\staticwebassets\DespinaCoffeeShop.StaticWebAssets.xml
+C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\DespinaCoffeeShop.styles.css

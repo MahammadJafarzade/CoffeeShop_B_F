@@ -9,7 +9,7 @@
             <ul>
                 @foreach (var categories in Model.Categories)
                 {
-                <li><a asp-action="MenuDetail" asp-controller="Menu"><img  src="~/./assets/Img/@categories.Image"><span>@categories.Name</span></a></li>
+                    <li><a asp-action="MenuDetail" asp-controller="Menu"><img src="~/./assets/Img/@categories.Image"><span>@categories.Name</span></a></li>
                 }
             </ul>
         </div>
@@ -66,13 +66,13 @@
             <div class="row">
                 @foreach (var discount in Model.Discounts)
                 {
-                <div class="discount col-md-6">
-                    <img  src="~/./assets/Img/@discount.Image">
-                    <div class="description">
-                        <i class="fa-solid fa-gift"></i>
-                        <h2>@discount.Discdescription</h2>
+                    <div class="discount col-md-6">
+                        <img src="~/./assets/Img/@discount.Image">
+                        <div class="description">
+                            <i class="fa-solid fa-gift"></i>
+                            <h2>@discount.Discdescription</h2>
+                        </div>
                     </div>
-                </div>
                 }
             </div>
         </div>
@@ -89,20 +89,20 @@
                 <div class="inner-menu row" data-aos="fade-up">
                     @foreach (var item in Model.menuProducts)
                     {
-                    <div class="item col-md-6">
-                        <div class="item-image">
-                            <img  src="~/./assets/Img/@item.ProductImage">
-                        </div>
-                        <div class="item-description">
-                            <div class="title">
-                                <h5>@item.ProductName</h5>
-                                <span>$@item.ProductPrice.ToString("0.00")</span>
+                        <div class="item col-md-6">
+                            <div class="item-image">
+                                <img src="~/./assets/Img/@item.ProductImage">
                             </div>
-                            <div class="inner-coffee">
-                                <p>@item.ProductDescription</p>
+                            <div class="item-description">
+                                <div class="title">
+                                    <h5>@item.ProductName</h5>
+                                    <span>$@item.ProductPrice.ToString("0.00")</span>
+                                </div>
+                                <div class="inner-coffee">
+                                    <p>@item.ProductDescription</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     }
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 @foreach (var item in Model.Shops)
                 {
                     <div class="shop-slide col-12">
-                        <a  asp-action="detail" asp-controller="shop" asp-route-id="@item.Id">
+                        <a asp-action="detail" asp-controller="shop" asp-route-id="@item.Id">
                             <img src="~/./assets/Img/@item.Image">
                         </a>
                     </div>

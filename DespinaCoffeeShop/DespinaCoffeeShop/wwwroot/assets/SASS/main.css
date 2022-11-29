@@ -667,20 +667,16 @@ textarea {
 
 .paginations {
   margin-top: -20px;
-}
-.paginations ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
 }
-.paginations ul li {
+.paginations .page {
+  list-style-type: none;
   margin: 10px;
   background-color: black;
   border-radius: 50%;
   padding: 15px;
   font-size: 15px;
-}
-.paginations ul li a {
   text-decoration: none;
   color: wheat;
 }

@@ -60,26 +60,7 @@
                         <a asp-action="Index" asp-controller="Shop">
                             Shop
                         </a>
-                        <div class="drop-shop">
-                            <a href="#" class="clinks">
-                                Tools for Barista
-                            </a>
-                            <a href="#" class="clinks">
-                                Capsule Coffees
-                            </a>
-                            <a href="#" class="clinks">
-                                Trailhead Coffees
-                            </a>
-                            <a href="#" class="clinks">
-                                America Coffees
-                            </a>
-                            <a href="#" class="clinks">
-                                Vertical Reserve
-                            </a>
-                            <a href="#" class="clinks">
-                                Giuseppe Coffees
-                            </a>
-                        </div>
+                        @await Component.InvokeAsync("Header")
                     </li>
                     <li>
                         <a  asp-action="Index" asp-controller="blog">Blog</a>
@@ -95,25 +76,20 @@
                     <ul>
                         <li><a asp-action="Index" asp-controller="home"><img src="~/./assets/Img/logo (1).png"></a></li>
                         <li><a asp-action="MenuDetail" asp-controller="Menu" asp-route-id="Id">Menu</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a  asp-action="Index" asp-controller="Shop">Shop</a></li>
                         <li><a asp-action="Index" asp-controller="blog">Blog</a></li>
                         <li><a asp-action="Index" asp-controller="contact">Contact</a></li>
                     </ul>
                 </nav>
             </label>
             <div class="bar">
-                <ul>
-                    <a href="#">
-                    <li>
-                        <i class="fa-solid fa-basket-shopping"></i>
-                        <span>0.00$</span>
-                    </li>
-                    </a>
+                <ul style="list-style-type:none; color:white;">
+
                     @if (User.Identity.IsAuthenticated)
                     {
-                <li>
-                    @User.Identity.Name
-                </li>
+                        <li>
+                            @User.Identity.Name
+                        </li>
                         <a asp-action="Logout" asp-controller="Account">
                         <li>
                             <i class="fa-regular fa-user"></i>
@@ -130,7 +106,13 @@
                         </li>
                         </a>
                     }
-                </ul>
+                    <a href="#">
+                    <li>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>0.00$</span>
+                    </li>
+                    </a>
+                </ulstyle="list-style-type:none;">
             </div>
         </div>
     </header>

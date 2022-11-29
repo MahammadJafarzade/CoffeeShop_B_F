@@ -1,0 +1,18 @@
+﻿@model List<Product>
+
+@foreach (var item in Model)
+{
+    <div class="shop-product col-md-3 col-sm-4 col-xs-12">
+        @foreach (var img in @item.Images)
+        {
+            <img src="~/assets/Img/@img.Url" />
+        }
+            <h5>@item.Title</h5>
+            <h5>$@item.Price<h5>
+                <div class="button-overlay">
+                    <a asp-action="detail" asp-controller="Shop" asp-route-id="@item.Id">
+                        <button class="add-button">View Fullpage</button>
+                    </a>
+                </div>
+    </div>
+}

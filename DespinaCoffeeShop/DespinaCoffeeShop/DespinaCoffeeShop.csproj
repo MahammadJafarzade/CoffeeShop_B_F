@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <ApplicationIcon></ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -662,11 +663,13 @@
     <None Include="wwwroot\assets\SASS\Pages\_menu.scss" />
     <None Include="wwwroot\assets\SASS\Pages\_register.scss" />
     <None Include="wwwroot\assets\SASS\Pages\_shop.scss" />
+    <None Include="wwwroot\Js\main.js" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\DespinaAdmin\Data\" />
     <Folder Include="Areas\DespinaAdmin\Models\" />
+    <Folder Include="Views\Shared\Components\Footer\" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

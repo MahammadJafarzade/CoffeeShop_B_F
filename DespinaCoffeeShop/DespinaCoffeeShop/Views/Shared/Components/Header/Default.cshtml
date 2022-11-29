@@ -1,0 +1,7 @@
+﻿@model List<ProductCategory>
+<div class="drop-shop">
+    @foreach (var item in Model)
+    {
+        <a asp-controller="Shop" asp-action="FilterforCategory" asp-route-name="@item.Name">@item.Name</a>
+    }
+</div>

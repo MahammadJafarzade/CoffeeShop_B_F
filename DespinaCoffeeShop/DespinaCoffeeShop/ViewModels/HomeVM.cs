@@ -19,6 +19,7 @@ namespace DespinaCoffeeShop.ViewModels
         public List<SocialMedia> SocialMedias { get; set; }
         public List<ProductCategory> ProductCategory { get; set; }
         public List<Product> Products{ get; set; }
+        public List<ProductVM> ProductVMs { get; set; }
     }
 }
 

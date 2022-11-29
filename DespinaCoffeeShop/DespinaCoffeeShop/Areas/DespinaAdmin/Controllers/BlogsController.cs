@@ -4,6 +4,7 @@ using DespinaCoffeeShop.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -61,7 +62,7 @@ namespace DespinaCoffeeShop.Areas.DespinaAdmin.Controllers
         {
             if (id == null)
                 return BadRequest();
-            var blog = _context.Blogs.Find(id);
+            var blog = _context.Blogs.Where(n=>n.Id==id).FirstOrDefault();
             if (blogs == null)
                 return NotFound();
 
