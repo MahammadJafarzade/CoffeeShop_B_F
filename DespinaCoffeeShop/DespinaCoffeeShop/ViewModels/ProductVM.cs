@@ -9,6 +9,6 @@ namespace DespinaCoffeeShop.ViewModels
     public class ProductVM
     {
         public  List<Product> products { get; set; }
-        public  string categoryName { get; set; } 
+        public  string categoryName { get; set; }
     }
 }

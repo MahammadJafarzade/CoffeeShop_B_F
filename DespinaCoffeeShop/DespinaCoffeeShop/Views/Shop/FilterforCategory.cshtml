@@ -13,14 +13,13 @@
                 {
                     <img src="~/assets/Img/@img.Url" />
                 }
-                <h5>@item.Title</h5>
-                <h5>
-                    $@item.Price<h5>
-                        <div class="button-overlay">
+                 <h5>@item.Title</h5>
+                 <h5>$@item.Price<h5>
+                     <div class="button-overlay">
                             <a asp-action="detail" asp-controller="Shop" asp-route-id="@item.Id">
-                                <button class="add-button">View Fullpage</button>
+                                <button class="add-button" >View Fullpage</button>
                             </a>
-                        </div>
+                     </div>
             </div>
         }
     </div>

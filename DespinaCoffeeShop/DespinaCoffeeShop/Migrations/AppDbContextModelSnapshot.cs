@@ -90,6 +90,50 @@ namespace DespinaCoffeeShop.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("DespinaCoffeeShop.Models.Basket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId")
+                        .IsUnique()
+                        .HasFilter("[AppUserId] IS NOT NULL");
+
+                    b.ToTable("baskets");
+                });
+
+            modelBuilder.Entity("DespinaCoffeeShop.Models.BasketProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BasketId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BasketId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("BasketProducts");
+                });
+
             modelBuilder.Entity("DespinaCoffeeShop.Models.Blog", b =>
                 {
                     b.Property<int>("Id")
@@ -505,6 +549,28 @@ namespace DespinaCoffeeShop.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("DespinaCoffeeShop.Models.Basket", b =>
+                {
+                    b.HasOne("DespinaCoffeeShop.Models.AppUser", "AppUser")
+                        .WithOne("basket")
+                        .HasForeignKey("DespinaCoffeeShop.Models.Basket", "AppUserId");
+                });
+
+            modelBuilder.Entity("DespinaCoffeeShop.Models.BasketProduct", b =>
+                {
+                    b.HasOne("DespinaCoffeeShop.Models.Basket", "basket")
+                        .WithMany("basketProducts")
+                        .HasForeignKey("BasketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DespinaCoffeeShop.Models.Product", "product")
+                        .WithMany("basketProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DespinaCoffeeShop.Models.Product", b =>

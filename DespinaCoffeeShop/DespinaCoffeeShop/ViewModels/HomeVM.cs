@@ -11,7 +11,7 @@ namespace DespinaCoffeeShop.ViewModels
         public List<Category> Categories { get; set; }
         public List<Discount> Discounts { get; set; }
         public List<Slide> Slides { get; set; }
-        public List<Shop> Shops { get; set; }
+        public List<Models.Shop> Shops { get; set; }
         public List<Future> Futures { get; set; }
         public List<Blog> Blogs { get; set; }
         public List<InnerMenu> MenuDetails { get; set; }

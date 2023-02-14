@@ -1,4 +1,9 @@
 ﻿@model ShopVM
+
+@Model.Page
+@Model.PageCount
+@Model.Take
+
 @{
     ViewData["Title"] = "Index";
 }
@@ -10,7 +15,7 @@
             <ul>
                 @foreach (var item in Model.ProductCategory)
                 {
-                 <li><a asp-controller="Shop" asp-action="FilterforCategory" asp-route-name="@item.Name">@item.Name</a></li>
+                    <li><a asp-controller="Shop" asp-action="FilterforCategory" asp-route-name="@item.Name">@item.Name</a></li>
                 }
             </ul>
             <div class="price-range">
@@ -24,11 +29,24 @@
             <button class="filter-price">Filter</button>
         </div>
         <div class="shop-products col-lg-9 row" id="products">
-            <partial name="_ProductPartial" model="@Model.Products"/>
+            <partial name="_ProductPartial" model="@Model.Products" />
         </div>
     </div>
     <div class="paginations">
-        <input type="hidden" id="count" value="@ViewBag.ProductCount"/>
-        <button class="page" id="page-list">Load more</button>
+        @*@{
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {*@
+                @*<ul class="page-numbers">
+                    <li><span aria-current="page" class="page-numbers current">@i</span></li>
+                </ul>*@
+                @*<ul>
+                    <li>
+                        <button class="page @(Model.Page == i ? "disabled")">@i</button>
+                    </li>
+                </ul>
+            }
+        }*@
+        <button class="page"><i class="fa-solid fa-arrow-right"></i></button>
     </div>
+
 </div>

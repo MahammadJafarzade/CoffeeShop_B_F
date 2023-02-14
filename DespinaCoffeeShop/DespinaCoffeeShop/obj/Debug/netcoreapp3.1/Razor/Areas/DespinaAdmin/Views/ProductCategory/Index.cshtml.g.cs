@@ -26,8 +26,15 @@ using DespinaCoffeeShop.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Orkhan\source\repos\DespinaCoffeeShop\DespinaCoffeeShop\Areas\DespinaAdmin\Views\_ViewImports.cshtml"
+using DespinaCoffeeShop.ViewModels.Shop;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"55b4f4d020b310ecab9648ee00859b91f1fbded7", @"/Areas/DespinaAdmin/Views/ProductCategory/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbd778a1e458c72c2596643226a8db09b850e4f3", @"/Areas/DespinaAdmin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"656515a760d9379be17a76438b7b6f2f67809546", @"/Areas/DespinaAdmin/Views/_ViewImports.cshtml")]
     public class Areas_DespinaAdmin_Views_ProductCategory_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ProductCategory>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-success"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -71,7 +78,7 @@ using DespinaCoffeeShop.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"row col-lg-12\">\r\n    <div class=\"col-lg-12 grid-margin stretch-card\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h4 class=\"card-title\">Categories</h4>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded75856", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded76088", async() => {
                 WriteLiteral("Create Category");
             }
             );
@@ -130,7 +137,7 @@ using DespinaCoffeeShop.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                                    </td>\r\n                                    <td>\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded79033", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded79265", async() => {
                 WriteLiteral("\r\n                                            <i class=\"mdi mdi-delete\"></i>\r\n                                        ");
             }
             );
@@ -162,7 +169,7 @@ using DespinaCoffeeShop.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded711522", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55b4f4d020b310ecab9648ee00859b91f1fbded711754", async() => {
                 WriteLiteral("\r\n                                            <i class=\"mdi mdi-pencil\"></i>\r\n                                        ");
             }
             );

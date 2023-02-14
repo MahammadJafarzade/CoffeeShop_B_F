@@ -10,5 +10,6 @@ namespace DespinaCoffeeShop.Models
     {
         public string Fullname { get; set; }
         public bool IsActivated { get; set; }
+        public Basket basket  { get; set; }
     }
 }

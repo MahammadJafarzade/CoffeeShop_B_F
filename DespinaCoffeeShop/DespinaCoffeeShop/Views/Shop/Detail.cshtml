@@ -8,7 +8,7 @@
         <div class="product">
             @foreach (var img in Model.Images)
             {
-                <img src="~/assets/Img/@img.Url" />
+                <img src="~/assets/Img/@img.Url" style="max-width:100%;"/>
             }
         </div>
             <div class="prod-details">
@@ -20,7 +20,7 @@
                     <input type="text" value="1">
                     <span class="up" onClick='increaseCount(event, this)'>+</span>
                 </div>
-                <button class="pr-button">Add To Cart</button>
+                <button asp-controller="Basket" asp-action="add" class="pr-button" asp-route-id="@Model.Id" asp-route-quantity="@Model.Price" id="add-item">Add To Cart</button>
             </div>
     </div>
 </div>

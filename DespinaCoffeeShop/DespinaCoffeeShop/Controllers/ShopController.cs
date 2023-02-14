@@ -1,4 +1,5 @@
 ﻿using DespinaCoffeeShop.DAL;
+using DespinaCoffeeShop.Models;
 using DespinaCoffeeShop.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,15 +21,17 @@ namespace DespinaCoffeeShop.Controllers
             _count = context.Products.Where(p => !p.IsDeleted).Count();
 
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            ViewBag.ProductCount = _count;
+            ViewBag.ProductCount =  _count;
             ShopVM shop = new ShopVM
             {
                 ProductCategory = _context.ProductCategories.Where(s =>! s.IsDeleted).Include(c=>c.Products).ToList(),
                 Products=_context.Products.Where(s => !s.IsDeleted).Include(n=>n.Images).ToList()
+
             };
-            return View(shop);
+            
+            return View(shop); 
         }
         public IActionResult Detail(int id)
         {
@@ -46,15 +49,35 @@ namespace DespinaCoffeeShop.Controllers
             productVM.categoryName = name;
             return View(productVM);
         }
-        public IActionResult PageProduct(string name,int skip=9)
+        public async Task<IActionResult> PageProductAsync(ShopVM product ,string name,int skip=9)
         {
-            if (skip >= _count)
+            var products = await PaginateProductsAsync(product.Page, product.Take);
+            var model = new ShopVM
             {
-                return BadRequest();
-            }
-            var product = _context.Products.Include(p => p.Images).OrderByDescending(p => p.Id).Skip(skip).Take(9).Where(p => !p.IsDeleted && p.ProductCategory.Name == name).ToList();
-            return PartialView("_ProductPartial", product);
+                Products = await _context.Products.OrderByDescending(s => s.Id).ToListAsync(),
+                PageCount = await GetPageCountAsync(product.Take),
+                Page= product.Page
 
+            };
+            //if (skip >= _count)
+            //{
+            //    return BadRequest();
+            //}
+            //var product = _context.Products.Include(p => p.Images).OrderByDescending(p => p.Id).Skip(skip).Take(9).Where(p => !p.IsDeleted && p.ProductCategory.Name == name).ToList();
+            return View(model);
         }
+        private async Task<List<Product>> PaginateProductsAsync(int page, int take)
+        {
+            return await _context.Products
+                 .OrderByDescending(s => s.Id)
+                 .Skip((page - 1) * take)
+                 .Take(take)
+                 .ToListAsync();
+        }
+        private async Task<int> GetPageCountAsync(int take)
+        {
+            var productsCount = await _context.Products.CountAsync();
+            return (int)Math.Ceiling((decimal)productsCount / take);
+        }  
     }
 }

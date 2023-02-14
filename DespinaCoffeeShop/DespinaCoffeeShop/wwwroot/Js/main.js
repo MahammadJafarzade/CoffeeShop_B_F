@@ -1,20 +1,4 @@
-////$(document).ready(function){
-////    $(document).on('click', '#page-list', function () {
-////        let maxCount = $("#count").val();
-////        let length = $("#products").children.length;
-////        $.ajax({
-////            url: 'http://localhost:63269/Shop/PageProduct?skip=${length}',
-////            method: "GET",
-////            success: function (res) {
-////                $("#products").append(res);
-////                if ($("#count").children.length >= maxCount) {
-////                    $("#page-list").css("display", "none")
-////                }
-////            }
-////        })
-////    })
-////}
-$('.slick-slider').slick({
+﻿$('.slick-slider').slick({
     dots: true,
     infinite: false,
     speed: 300,
@@ -167,20 +151,53 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-function increaseCount(a, b) {
-    var input = b.previousElementSibling;
-    var value = parseInt(input.value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    input.value = value;
-}
-function decreaseCount(a, b) {
-    var input = b.nextElementSibling;
-    var value = parseInt(input.value, 10);
-    if (value > 1) {
-        value = isNaN(value) ? 0 : value;
-        value--;
-        input.value = value;
-    }
-}
-
+//function increaseCount(a, b) {
+//    var input = b.previousElementSibling;
+//    var value = parseInt(input.value, 10);
+//    value = isNaN(value) ? 0 : value;
+//    value++;
+//    input.value = value;
+//}
+//function decreaseCount(a, b) {
+//    var input = b.nextElementSibling;
+//    var value = parseInt(input.value, 10);
+//    if (value > 1) {
+//        value = isNaN(value) ? 0 : value;
+//        value--;
+//        input.value = value;
+//    }
+//}
+//var btn = document.querySelector("#add-item");
+//btn.addEventListener('click', () => {
+//    console.log("salam alekum");
+//});
+//﻿jQuery(function ($) {
+//    $(document).on('click', '#add-item', function () {
+//        var id = $(this).data('id');
+//        $.ajax({
+//            method: "POST",
+//            url: "/baskets/add",
+//            data: {
+//                id: id
+//            },
+//            success: function () {
+//                console.log("ok");
+//            }
+//        })
+//    })
+// })
+//jQuery(function ($) {
+//    $(document).on('click', '#deletebtn', function () {
+//        var id = $(this).data('id');
+//        $.ajax({
+//            method: "POST",
+//            url: "/baskets/delete",
+//            data: {
+//                id: id
+//            },
+//            success: function () {
+//                $('.basket-product[id=${id}]').remove();
+//            }
+//        })
+//    })
+//})

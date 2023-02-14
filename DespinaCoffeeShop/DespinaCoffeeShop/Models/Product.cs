@@ -17,5 +17,7 @@ namespace DespinaCoffeeShop.Models
         public bool IsDeleted { get; set; }
         public int ProductCategoryId { get; set; }
         public ProductCategory ProductCategory { get; set; }
+        public ICollection<BasketProduct> basketProducts { get; set; }
+        
     }
 }

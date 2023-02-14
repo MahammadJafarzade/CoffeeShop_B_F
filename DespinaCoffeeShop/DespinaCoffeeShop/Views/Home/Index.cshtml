@@ -126,9 +126,7 @@
                 @foreach (var item in Model.Shops)
                 {
                     <div class="shop-slide col-12">
-                        <a asp-action="detail" asp-controller="shop" asp-route-id="@item.Id">
                             <img src="~/./assets/Img/@item.Image">
-                        </a>
                     </div>
                 }
             </div>
